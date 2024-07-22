@@ -10,7 +10,9 @@ with col1:
 with col2:
     st.title("Christopher Craig")
     content = """
-    Hello! My name is Christopher and I'm a budding program developer. Currently working
+    Hello! 
+    
+    My name is Christopher and I'm a budding program developer. Currently working
     in Tech and doing a lot of data management, so I thought Python would be a perfect first
     add to my quiver. 
     
@@ -18,3 +20,8 @@ with col2:
     JavaScript to the mix. I'll then get into some other coding like iOS and C#.
     """
     st.info(content)
+
+tag = """
+    Below you can find some of the apps that I have built with Python. Feel free to contact me!
+    """
+st.write(tag)

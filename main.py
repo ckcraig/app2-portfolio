@@ -1,3 +1,5 @@
+import pandas
+import pandas as pd
 import streamlit as st
 
 st.set_page_config(layout="wide")
@@ -25,3 +27,18 @@ tag = """
     Below you can find some of the apps that I have built with Python. Feel free to contact me!
     """
 st.write(tag)
+
+col3, col4 = st.columns(2)
+
+df = pandas.read_csv("data.csv", sep=";")
+with col3:
+    for index, row in df[:10].iterrows():
+        st.header(row["title"])
+
+    st.image("images/1.png")
+
+with col4:
+    for index, row in df[10:].iterrows():
+        st.header(row["title"])
+
+    st.image("images/2.png")
